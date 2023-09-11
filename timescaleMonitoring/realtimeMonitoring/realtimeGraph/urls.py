@@ -9,6 +9,7 @@ urlpatterns = [
     path("rema/", RemaView.as_view(), name="rema"),
     path("rema/<str:measure>", RemaView.as_view(), name="rema"),
     path("mapJson/", get_map_json, name="mapJson"),
+    path("mapJsonRetoIot/<str:measure>", get_map_json_reto_iot, name="mapJsonRetoIot"),
     path("mapJson/<str:measure>", get_map_json, name="mapJson"),
     path("login/", LoginView.as_view(), name="login"),
     path("logout/", LogoutView.as_view(), name="logout"),
